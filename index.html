@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Garnius</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+ <div class="titleborder">
+<h1 class="title1">  </h1>
+</div>
+
+<div id="garnlistebox">
+<ul>
+   <button onclick="toggleList2()" id="garnliste">Liste Drops</button>
+   <button onclick="toggleList3()" id="garnliste">Liste Dale Garn</button>
+   <button onclick="toggleList2()" id="garnliste">Liste DSA</button>
+   <button onclick="toggleList2()" id="garnliste">Liste Viking</button>
+ </ul>
+   </div>
+<div id="broder">
+  <ul id="ul">
+  <h3 id="ul">Drops:  </h3>
+   <p><li><h4 class="ul">Alt 50g</h4></li>
+     <li class="ul">Untatt:</li>
+     <li class="ul">Kid Silk, 25g</li>
+     <li class="ul">Brushed Alpaca Silk, 25g </li>
+     <li class="ul"> ANDES, 100g </li>
+   </p>
+ </ul>
+</div>
+
+<div id="broder2">
+  <ul id="ul">
+  <h3 id="ul">Viking garn:  </h3>
+   <p><li><h4 class="ul">Alt:50g</h4></li>
+     <li class="ul">Untatt:</li>
+     <li class="ul">Raggen, 150g </li>
+   </p>
+ </ul>
+</div>
+
+<div id="pane">
+  <ul><h3 id="title">  </h3>
+    <h4 class="a"</h4>
+    <li><button onclick="toggleList()"class="garn">VEKT</button></li>
+        <ul class="drops">
+         <li><button value="25"id="air">25 g</button></li>
+        <li><button value="50"id="mxf">50 g</button></li>
+        <li><button value="100" id="bm">100 g</button></li>
+        <div id="ghostpane"></div>
+      </ul>
+</div>
+
+<div class="inputborder">
+  <input type="text" placeholder="Total vekt gram" name="inputter"id="inputter">
+</div>
+
+
+
+<div class="inputborder">
+  <select id="#calculation">
+    <option value="/"> / </option>
+    <option value="*"> * </option>
+    <option value="-"> - </option>
+    <option value="+"> + </option>
+  </select>
+</div>
+
+
+
+<div class="knapper">
+<div class="inputborder">
+  <input type="text" id="inputter2" name="inputter2">
+</div>
+
+<div>
+<p class="dividedby"> = </p>
+</div>
+
+<div class="btn2">
+  <button  value = "Solve" onclick = "calc()" class="btnn">ENTER </button>
+</div>
+
+<div class="inputborder">
+  <p id="result"></p>
+</div>
+
+</div>
+
+<div id="particles-js"></div>
+
+<script defer src="https://www.jsdelivr.com/package/npm/particles.js"></script>
+
+<script>
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+</script>
+
+</body>
+</html>
